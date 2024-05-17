@@ -2,6 +2,9 @@
 
 Script Node.js que monitora e registra as informações do sistema. Abaixo estão os detalhes das funcionalidades deste código:
 
+## Como usar
+Para iniciar o script, use o comando `node monitor.js`.
+
 ## Importação de Módulos
 - `os`: Módulo do Node.js para interagir com o sistema operacional.
 - `fs`: Módulo do Node.js para manipulação do sistema de arquivos.
@@ -33,8 +36,3 @@ Script Node.js que monitora e registra as informações do sistema. Abaixo estã
 
 ## Monitoramento Contínuo
 - Usa `setInterval` para executar as funções `getSystemInfo`, `printLog` e `saveLog` a cada 1000 milissegundos (1 segundo), criando um monitoramento contínuo do sistema.
-
-## Comentários Adicionais
-- **Tratamento de Erros**: O código atual não inclui tratamento de erros. Em um cenário de produção, seria importante adicionar verificação de erros, especialmente ao interagir com o sistema de arquivos.
-- **Permissões de Escrita**: A escrita no diretório raiz (`/log`) pode exigir permissões de administrador/superusuário, o que pode não ser ideal ou possível em todos os ambientes.
-- **Eficácia**: A execução a cada segundo pode ser ajustada conforme a necessidade, pois pode ser muito frequente dependendo do uso pretendido.
